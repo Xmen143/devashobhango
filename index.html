@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Devashobha Sanstha Trust - Premier Old Age Home in Mumbai. CSR Partnership opportunities for corporate social responsibility initiatives.">
+  <title>Devashobha Sanstha Trust | Premium Elder Care & CSR Partnership</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --secondary: #f59e0b;
+      --accent: #10b981;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      --text-primary: #1f2937;
+      --text-secondary: #6b7280;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient-alt: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body { 
+      font-family: 'Inter', sans-serif; 
+      background: var(--bg-light); 
+      color: var(--text-primary); 
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Header & Navigation */
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gradient);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .cta-button {
+      background: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .cta-button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 4px;
+    }
+
+    .mobile-menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: var(--text-primary);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -50%;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="500" cy="500" r="400" fill="url(%23a)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .hero-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-content {
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: white;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--primary);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      padding: 1rem 2rem;
+      border: 2px solid white;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background: white;
+      color: var(--primary);
+    }
+
+    .hero-visual {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-image {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
+      transform: rotate(2deg);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image:hover {
+      transform: rotate(0deg);
+    }
+
+    /* Stats Section */
+    .stats-section {
+      background: white;
+      padding: 4rem 0;
+      margin-top: -2rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .stats-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 15px;
+      background: var(--bg-light);
+      transition: transform 0.3s ease;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    /* Main Sections */
+    .section {
+      padding: 5rem 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-badge {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Feature Cards */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      border: 1px solid #e5e7eb;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--gradient);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .feature-description {
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* CSR Section */
+    .csr-section {
+      background: var(--gradient-alt);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .csr-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="b" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="500" cy="500" r="300" fill="url(%23b)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .csr-container {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .csr-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .csr-content p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .csr-highlights {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .csr-highlights li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .csr-highlights li::before {
+      content: '✓';
+      background: rgba(255, 255, 255, 0.2);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+
+    .funding-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .funding-amount {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .funding-period {
+      opacity: 0.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .funding-breakdown {
+      list-style: none;
+    }
+
+    .funding-breakdown li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .contact-info {
+      background: var(--bg-light);
+      padding: 2rem;
+      border-radius: 20px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      color: white;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-label {
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .form-input {
+      padding: 1rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .form-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--text-primary);
+      color: white;
+      padding: 3rem 0 1rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .footer-section p, .footer-section a {
+      color: #9ca3af;
+      text-decoration: none;
+      line-height: 1.6;
+    }
+
+    .footer-section a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #374151;
+      padding-top: 1rem;
+      text-align: center;
+      color: #9ca3af;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .hero-container, .csr-container, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .hero-title {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .mobile-menu-toggle {
+        display: flex;
+      }
+      
+      .nav-menu {
+        display: none;
+      }
+      
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+      }
+      
+      .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav-container {
+        padding: 1rem;
+      }
+      
+      .hero-title {
+        font-size: 2rem;
+      }
+      
+      .stats-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .container {
+        padding: 0 1rem;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--primary);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--primary-dark);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        Devashobha Sanstha
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#csr" class="nav-link">CSR Partnership</a></li>
+        <li><a href="#impact" class="nav-link">Impact</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <a href="#csr" class="cta-button">Partner With Us</a>
+      
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-award"></i>
+          CSR-1 Certified NGO
+        </div>
+        <h1 class="hero-title">Transforming Elder Care in Mumbai</h1>
+        <p class="hero-subtitle">Join us in creating India's most compassionate old age home. Your CSR partnership can restore dignity and hope to abandoned elderly citizens.</p>
+        <div class="hero-buttons">
+          <a href="#csr" class="btn-primary">
+            <i class="fas fa-handshake"></i>
+            Explore CSR Partnership
+          </a>
+          <a href="#about" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elder Care" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-number">30+</div>
+        <div class="stat-label">Elders to be Supported</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Medical Care</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100+</div>
+        <div class="stat-label">Daily Nutritious Meals</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Trained Caregivers</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Who We Are</div>
+        <h2 class="section-title">Dedicated to Elder Dignity</h2>
+        <p class="section-subtitle">Devashobha Sanstha Trust is Mumbai's premier non-profit organization committed to providing world-class care for elderly citizens who need it most.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3 class="feature-title">Premium Accommodation</h3>
+          <p class="feature-description">30-bed facility with modern amenities, ensuring comfort and safety for all residents in a peaceful Mumbai location.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h3 class="feature-title">Comprehensive Healthcare</h3>
+          <p class="feature-description">Round-the-clock medical support with regular doctor visits, emergency services, and medicine management.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3 class="feature-title">Nutritious Meals</h3>
+          <p class="feature-description">Home-style cooking with three daily meals plus evening tea and snacks, prepared with love and nutrition in mind.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="feature-title">Social Activities</h3>
+          <p class="feature-description">Regular cultural programs, festivals, group activities, and digital literacy programs to keep residents engaged.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3 class="feature-title">Legal Support</h3>
+          <p class="feature-description">Advocacy for senior citizen rights and legal assistance to ensure our residents' interests are protected.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3 class="feature-title">Emotional Wellbeing</h3>
+          <p class="feature-description">Professional counseling services and a nurturing environment that treats every resident as family.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CSR Partnership Section -->
+  <section id="csr" class="section csr-section">
+    <div class="container">
+      <div class="csr-container">
+        <div class="csr-content">
+          <h2>Strategic CSR Partnership Opportunity</h2>
+          <p>Partner with us under Schedule VII of the Companies Act to create lasting social impact. Your investment will establish Mumbai's most advanced elder care facility.</p>
+          
+          <ul class="csr-highlights">
+            <li>80G Tax Benefits Available</li>
+            <li>12A Registration Completed</li>
+            <li>CSR-1 Certification Active</li>
+            <li>NGO Darpan ID: Available</li>
+            <li>Transparent Fund Utilization</li>
+            <li>Regular Impact Reports</li>
+          </ul>
+          
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">
+              <i class="fas fa-download"></i>
+              Download Project Proposal
+            </a>
+          </div>
+        </div>
+        
+        <div class="funding-card">
+          <div class="funding-amount">₹3.48 Crores</div>
+          <div class="funding-period">Total Project Investment (3 Years)</div>
+          
+          <ul class="funding-breakdown">
+            <li><span>Infrastructure Setup</span><span>₹1.2 Cr</span></li>
+            <li><span>Operational Costs</span><span>₹1.8 Cr</span></li>
+            <li><span>Medical Equipment</span><span>₹0.3 Cr</span></li>
+            <li><span>Training & Development</span><span>₹0.18 Cr</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Section -->
+  <section id="impact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Our Impact</div>
+        <h2 class="section-title">Measurable Social Change</h2>
+        <p class="section-subtitle">Every partnership creates ripple effects of positive change in the community and demonstrates corporate responsibility.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users-cog"></i>
+          </div>
+          <h3 class="feature-title">20+ Elders Identified</h3>
+          <p class="feature-description">Vulnerable elderly citizens already identified and assessed for immediate onboarding once facility is operational.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3 class="feature-title">Strong Partnerships</h3>
+          <p class="feature-description">Active collaborations with local doctors, volunteers, and community organizations for comprehensive care delivery.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3 class="feature-title">Full Compliance</h3>
+          <p class="feature-description">All legal requirements met including CSR-1, 12A, 80G provisional certification, and NGO Darpan registration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Get In Touch</div>
+        <h2 class="section-title">Start Your CSR Partnership Journey</h2>
+        <p class="section-subtitle">Ready to make a difference? Let's discuss how your organization can create lasting impact through our elder care initiative.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Address</h4>
+              <p>Badlapur, Thane District<br>Maharashtra, India</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:devashobha.trust@gmail.com">devashobha.trust@gmail.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91-XXXXXXXXXX</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Monday - Saturday<br>9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form">
+          <div class="form-group">
+            <label class="form-label">Organization Name *</label>
+            <input type="text" class="form-input" placeholder="Your Company Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Contact Person *</label>
+            <input type="text" class="form-input" placeholder="Your Full Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" class="form-input" placeholder="your.email@company.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-input" placeholder="+91-XXXXXXXXXX">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">CSR Budget Range</label>
+            <select class="form-input">
+              <option value="">Select Budget Range</option>
+              <option value="under-50L">Under ₹50 Lakhs</option>
+              <option value="50L-1Cr">₹50 Lakhs - ₹1 Crore</option>
+              <option value="1Cr-3Cr">₹1 Crore - ₹3 Crores</option>
+              <option value="above-3Cr">Above ₹3 Crores</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-input form-textarea" placeholder="Tell us about your CSR objectives and how we can collaborate..."></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i>
+            Send Partnership Inquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Devashobha Sanstha Trust</h3>
+          <p>Transforming elder care in Mumbai through compassionate service and innovative partnerships. Join us in creating a dignified future for our senior citizens.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <p><a href="#about">About Us</a></p>
+          <p><a href="#services">Our Services</a></p>
+          <p><a href="#csr">CSR Partnership</a></p>
+          <p><a href="#impact">Impact</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <p>CSR-1 Certified</p>
+          <p>12A Registration: Active</p>
+          <p>80G Benefits: Available</p>
+          <p>NGO Darpan: Registered</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <p>📧 devashobha.trust@gmail.com</p>
+          <p>📞 +91-XXXXXXXXXX</p>
+          <p>📍 Badlapur, Thane, Maharashtra</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Devashobha Sanstha Trust. All rights reserved. | Registered NGO | CSR-1 Certified</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    mobileMenuToggle.addEventListener('click', () => {
+      navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Smooth Scrolling for Navigation Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Header Background on Scroll
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 100) {
+        header.style.background = 'rgba(255, 255, 255, 0.98)';
+      } else {
+        header.style.background = 'rgba(255, 255, 255, 0.95)';
+      }
+    });
+
+    // Form Submission Handler
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      
+      // Here you would typically send the data to your server
+      alert('Thank you for your interest! We will contact you within 24 hours to discuss partnership opportunities.');
+      
+      // Reset form
+      this.reset();
+    });
+
+    // Animate elements on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+
+    // Add animation to feature cards
+    document.querySelectorAll('.feature-card').forEach((card, index) => {
+      card.style.animationDelay = `${index * 0.1}s`;
+      observer.observe(card);
+    });
+
+    // Counter animation for stats
+    const animateCounters = () => {
+      const counters = document.querySelectorAll('.stat-number');
+      const speed = 200;
+
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = parseInt(counter.innerText.replace(/\D/g, ''));
+          const count = parseInt(counter.getAttribute('data-count') || 0);
+          const inc = target / speed;
+
+          if (count < target) {
+            counter.setAttribute('data-count', Math.ceil(count + inc));
+            counter.innerText = Math.ceil(count + inc) + (counter.innerText.includes('+') ? '+' : '');
+            setTimeout(updateCount, 1);
+          } else {
+            counter.innerText = target + (counter.innerText.includes('+') ? '+' : '');
+          }
+        };
+        updateCount();
+      });
+    };
+
+    // Trigger counter animation when stats section is visible
+    const statsSection = document.querySelector('.stats-section');
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+
+    // Add loading animation
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease-in-out';
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+
+    // Preload critical images
+    const criticalImages = [
+      'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+    ];
+
+    criticalImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  </script>
+</body>
+</html>
